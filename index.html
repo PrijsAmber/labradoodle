@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="nl" class="bg">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Labradoodle | Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/indexStylesheet.css">
+</head>
+<body>
+<div class="bg">
+    <div class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container containerNav">
+            <a class="navbar-brand text-dark " href="index.html">Labradoodle</a>
+            <button type="button" data-toggle="collapse" class="Button" data-target=".navHeaderCollapse">
+                <span><img class="fluid" src="images/hamburger.png"></span>
+            </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="uiterlijk.html">Uiterlijk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="oorsprong.html">Oorsprong</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="gezondheid.html">Gezondheid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="omgang.html">Omgang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="controverse.html">Controverse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="fotogalerie.html">Fotogalerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="tabel.html">Tabel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="a"><button id="button1" type="button" class=" circel-button btn" onclick="window.location.href = 'uiterlijk.html'; ">Uiterlijk</button></div>
+    <div class="b"><button id="button2" type="button" class=" circel-button btn" onclick="window.location.href = 'oorsprong.html'; ">Oorspong</button></div>
+    <div class="c"><button id="button3" type="button" class=" circel-button btn" onclick="window.location.href = 'gezondheid.html'; ">Gezondheid</button></div>
+    <div class="d"><button id="button4" type="button" class=" circel-button btn" onclick="window.location.href = 'omgang.html'; ">Omgang</button></div>
+    <div class="e"><button id="button5" type="button" class=" circel-button btn" onclick="window.location.href = 'controverse.html'; ">Controverse</button></div>
+    <div class="f"><button id="button6" type="button" class=" circel-button btn" onclick="window.location.href = 'fotogalerie.html'; ">Fotogalerie</button></div>
+    <div class="g"><button id="button7" type="button" class=" circel-button btn" onclick="window.location.href = 'tabel.html'; ">Tabel</button></div>
+    <div class="h"><button id="button8" type="button" class=" circel-button btn" onclick="window.location.href = 'contact.html'; ">Contact</button></div>
+</div>
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+        animateDiv('.a');
+        animateDiv('.b');
+        animateDiv('.c');
+        animateDiv('.d');
+        animateDiv('.e');
+        animateDiv('.f');
+        animateDiv('.g');
+        animateDiv('.h');
+    });
+
+    function makeNewPosition(){
+
+        // Get viewport dimensions (remove the dimension of the div)
+        var h = $(window).height() - 220;
+        var w = $(window).width() - 150;
+
+        var nh = Math.floor(Math.random() * h+60);
+        var nw = Math.floor(Math.random() * w);
+
+        return [nh,nw];
+
+    }
+
+    function animateDiv(myclass){
+        var newq = makeNewPosition();
+        $(myclass).animate({ top: newq[0], left: newq[1] }, 7000,   function(){
+            animateDiv(myclass);
+        });
+    };
+	
+	$(".a").hover(
+	function () {
+        $(this).stop();
+		$("#button1").css("height", "200px");
+		$("#button1").css("width", "200px");
+        },
+	function () {
+		$("#button1").css("height", "150px");
+		$("#button1").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+	$(".b").hover(
+	function () {
+        $(this).stop();
+		$("#button2").css("height", "200px");
+		$("#button2").css("width", "200px");
+        },
+	function () {
+		$("#button2").css("height", "150px");
+		$("#button2").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+	$(".c").hover(
+	function () {
+        $(this).stop();
+		$("#button3").css("height", "200px");
+		$("#button3").css("width", "200px");
+        },
+	function () {
+		$("#button3").css("height", "150px");
+		$("#button3").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+	$(".d").hover(
+	function () {
+        $(this).stop();
+		$("#button4").css("height", "200px");
+		$("#button4").css("width", "200px");
+        },
+	function () {
+		$("#button4").css("height", "150px");
+		$("#button4").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+	$(".e").hover(
+	function () {
+        $(this).stop();
+		$("#button5").css("height", "200px");
+		$("#button5").css("width", "200px");
+        },
+	function () {
+		$("#button5").css("height", "150px");
+		$("#button5").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+	$(".f").hover(
+	function () {
+        $(this).stop();
+		$("#button6").css("height", "200px");
+		$("#button6").css("width", "200px");
+        },
+	function () {
+		$("#button6").css("height", "150px");
+		$("#button6").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+	$(".g").hover(
+	function () {
+        $(this).stop();
+		$("#button7").css("height", "200px");
+		$("#button7").css("width", "200px");
+        },
+	function () {
+		$("#button7").css("height", "150px");
+		$("#button7").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+	$(".h").hover(
+	function () {
+        $(this).stop();
+		$("#button8").css("height", "200px");
+		$("#button8").css("width", "200px");
+        },
+	function () {
+		$("#button8").css("height", "150px");
+		$("#button8").css("width", "150px");
+		animateDiv(this);
+	}
+	)
+	
+</script>
+</html>

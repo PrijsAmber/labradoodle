@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl" class="bg-warning">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact | Labradoodle</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<script src="js/jquery.slim.min.js"></script>
+<body class="bg-light">
+<div class="bg">
+
+<div class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="container containerNav">
+        <a class="navbar-brand text-dark" href="index.html">Labradoodle</a>
+        <button type="button" data-toggle="collapse" class="Button" data-target=".navHeaderCollapse">
+            <span><img class="fluid" src="images/hamburger.png"></span>
+        </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#row">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container top-buffer formContent">
+    <div class="row">
+        <div class="col-12">
+            <form class="needs-validation" novalidate method="post" action="">
+                <h1 class="text-center">Contact</h1>
+                <div class="form-row">
+                    <div class="col-12 col-sm-5">
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" class="text-center form-control" id="voornaam" placeholder="Voornaam" required>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                        <label for ="tussenvoegsel">Tussenvoegsel</label>
+                        <input type="text" class="text-center form-control" id="tussenvoegsel" placeholder="Tussenvoegsel">
+                    </div>
+                    <div class="col-12 col-sm-5">
+                        <label for="achternaam">Achternaam</label>
+                        <input type="text" class="text-center form-control" id="achternaam" placeholder="Achternaam">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12 col-sm-5">
+                        <label for="straatnaam">Straatnaam</label>
+                        <input type="text" class="text-center form-control" id="straatnaam" placeholder="Straatnaam" required>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                            <label for="huisnummer">Huisnummer</label>
+                        <input type="number" class="text-center form-control" id="huisnummer" placeholder="0" required>
+                    </div>
+                    <div class="col-12 col-sm-5">
+                        <label for="woonplaats">Woonplaats</label>
+                        <input type="text" class="text-center form-control" id="woonplaats" placeholder="Woonplaats" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-12 col-sm-8">
+                        <label for="email">Email</label>
+                        <input type="email" class="text-center form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <label for="telefoonnummer">Telefoonnummer</label>
+                        <input type="text" class="text-center form-control" id="telefoonnummer" placeholder="Telefoonnummer" required>
+                    </div>
+                </div>
+                <div class="col-14">
+                    <label for="textarea">Opmerking</label>
+                    <textarea class="form-control" id="textarea" rows="3" placeholder="Vul een opmerking in." required=""></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary offset-3 col-6">Submit</button>
+            </form>
+            <div id="formContent"></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="card-footer text-dark text-center font-weight-bold">Copyright © - Scrum Groep 14 - 2019</div>
+</body>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
